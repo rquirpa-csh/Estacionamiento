@@ -36,12 +36,12 @@ pipeline {
       }
     }
     
-    stage('Clean') {
+    /*stage('Clean') {
       steps{
-        echo "------------>Unit Tests<------------"
+        echo "------------>Clean<------------"
         sh 'gradle --b ./build.gradle clean'
       }
-    }
+    }*/
     
     stage('Compile & Unit Tests') {
       steps{
