@@ -39,7 +39,7 @@ pipeline {
     stage('Clean') {
       steps{
         echo "------------>Unit Tests<------------"
-        sh 'gradle --b ./estacionamiento/build.gradle clean'
+        sh 'gradle --b ./build.gradle clean'
       }
     }
     
