@@ -39,14 +39,14 @@ pipeline {
     /*stage('Clean') {
       steps{
         echo "------------>Clean<------------"
-        sh 'gradle --b ./build.gradle clean'
+        sh 'gradlew --b ./build.gradle clean'
       }
     }*/
     
     stage('Compile & Unit Tests') {
       steps{
         echo "------------>Unit Tests<------------"
-        sh 'gradle --b ./build.gradle test'
+        sh 'gradlew --b ./build.gradle test'
       }
     }
 
