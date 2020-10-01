@@ -36,12 +36,19 @@ pipeline {
       }
     }
     
-    /*stage('Clean') {
+    stage('Permissions') {
+      steps{
+        echo "------------>Permissions<------------"
+         sh 'chmod +x gradlew'
+      }
+    }
+    
+    stage('Clean') {
       steps{
         echo "------------>Clean<------------"
         sh './gradlew --b ./build.gradle clean'
       }
-    }*/
+    }
     
     stage('Compile & Unit Tests') {
       steps{
